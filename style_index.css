@@ -1,0 +1,82 @@
+/* التصميم العام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: hsl(221, 98%, 23%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.logout-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00646b;
+    border-radius: 5px;
+    float: right;
+    margin-top: -35px;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+/* الحاوية الخاصة بالكتب */
+.books-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* تصميم الكتاب */
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+.book img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* زر إضافة إلى السلة */
+.add-to-cart-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}

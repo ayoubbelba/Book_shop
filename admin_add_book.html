@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كتاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.php">لوحة التحكم</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>إضافة كتاب جديد</h1>
+        <form action="add_book.php" method="POST" enctype="multipart/form-data">
+            <label for="title">عنوان الكتاب</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">المؤلف</label>
+            <input type="text" id="author" name="author" required>
+            <label for="price">السعر</label>
+            <input type="number" id="price" name="price" required>
+            <label for="description">الوصف</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="image">صورة الكتاب</label>
+            <input type="file" id="image" name="image">
+            <label for="category">الفئة</label>
+            <input type="text" id="category" name="category" required>
+            <label for="stock">العدد المتاح</label>
+            <input type="number" id="stock" name="stock" required>
+            <button type="submit">إضافة الكتاب</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 موقع شراء الكتب</p>
+    </footer>
+</body>
+</html>
